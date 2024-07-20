@@ -17,7 +17,6 @@ const questions = [
             { text: "F. Scott Fitzgerald", correct: false }
         ]
     },
-    // Add more questions as needed
 ];
 
 let currentQuestionIndex = 0;
@@ -27,16 +26,23 @@ const questionElement = document.getElementById('question');
 const answerButtons = document.querySelectorAll('.answer-btn');
 const scoreElement = document.getElementById('score');
 const timerElement = document.getElementById('timer');
+const progressBar = document.getElementById('progress-bar');
 const fiftyFiftyButton = document.getElementById('lifeline1');
-const askAudienceButton = document.getElementById('lifeline2');
+const phoneFriendButton = document.getElementById('lifeline3');
+const switchQuestionButton = document.getElementById('lifeline4');
 
 fiftyFiftyButton.addEventListener('click', useFiftyFifty);
+phoneFriendButton.addEventListener('click', phoneAFriend);
+switchQuestionButton.addEventListener('click', switchQuestion);
 
 function startGame() {
     currentQuestionIndex = 0;
     score = 0;
     usedFiftyFifty = false;
     fiftyFiftyButton.disabled = false;
+    phoneFriendButton.disabled = false;
+    switchQuestionButton.disabled = false;
+    updateProgressBar();
     showQuestion();
 }
 
@@ -65,7 +71,7 @@ function handleTimeout() {
 
 function showQuestion() {
     resetState();
-    startTimer(); // Start the timer for the new question
+    startTimer();
     const currentQuestion = questions[currentQuestionIndex];
     questionElement.textContent = currentQuestion.question;
     currentQuestion.answers.forEach((answer, index) => {
@@ -74,6 +80,7 @@ function showQuestion() {
         button.dataset.correct = answer.correct;
         button.addEventListener('click', selectAnswer);
     });
+    updateProgressBar();
 }
 
 function resetState() {
@@ -87,7 +94,7 @@ function resetState() {
 }
 
 function selectAnswer(e) {
-    clearInterval(timer); // Stop the timer when an answer is selected
+    clearInterval(timer);
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct === 'true';
     if (correct) {
@@ -118,11 +125,31 @@ function useFiftyFifty() {
         }
     });
 
-    // Remove two random incorrect answers
     const answersToRemove = incorrectAnswers.sort(() => 0.5 - Math.random()).slice(0, 2);
     answersToRemove.forEach(index => {
         answerButtons[index].style.display = 'none';
     });
 }
 
+function phoneAFriend() {
+    phoneFriendButton.disabled = true;
+    alert("Your friend thinks the answer is: " + questions[currentQuestionIndex].answers.find(a => a.correct).text);
+}
+
+function switchQuestion() {
+    switchQuestionButton.disabled = true;
+    if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex++;
+        showQuestion();
+    } else {
+        alert('No more questions to switch to!');
+    }
+}
+
+function updateProgressBar() {
+    const progress = (currentQuestionIndex + 1) / questions.length * 100;
+    progressBar.style.width = progress + '%';
+}
+
 startGame();
+
