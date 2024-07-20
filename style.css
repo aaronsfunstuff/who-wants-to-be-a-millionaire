@@ -32,6 +32,7 @@ h1 {
     padding: 20px;
     background-color: #34495e;
     border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #question {
@@ -47,19 +48,38 @@ h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.answer-btn:hover {
-    background-color: #e67e22;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .answer-btn.correct {
     background-color: #27ae60;
+    animation: correct-answer 0.5s forwards;
 }
 
 .answer-btn.wrong {
     background-color: #c0392b;
+    animation: wrong-answer 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes correct-answer {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+@keyframes wrong-answer {
+    0% { transform: scale(1); }
+    100% { transform: scale(0.9); }
+}
+
+#timer-container {
+    margin-bottom: 20px;
+    font-size: 1.2em;
 }
 
 #score-container {
