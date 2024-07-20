@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #141E30, #243B55);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    background-color: #2c3e50;
+    border: 5px solid #e67e22;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #e67e22;
+}
+
+#question-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #34495e;
+    border-radius: 10px;
+}
+
+#question {
+    font-size: 1.5em;
+}
+
+.answer-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-btn:hover {
+    background-color: #e67e22;
+}
+
+.answer-btn.correct {
+    background-color: #27ae60;
+}
+
+.answer-btn.wrong {
+    background-color: #c0392b;
+}
+
+#score-container {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+#lifelines-container {
+    margin: 20px 0;
+}
+
+.lifeline-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2980b9;
+    color: #fff;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.lifeline-btn:hover {
+    background-color: #3498db;
+}
