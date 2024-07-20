@@ -9,14 +9,17 @@
 <body>
     <div id="game-container">
         <h1>Who Wants to Be a Millionaire</h1>
+        <div id="timer-container">
+            <p>Time Left: <span id="timer">30</span> seconds</p>
+        </div>
         <div id="question-container">
             <p id="question"></p>
         </div>
         <div id="answers-container">
-            <button class="answer-btn" id="answer1"></button>
-            <button class="answer-btn" id="answer2"></button>
-            <button class="answer-btn" id="answer3"></button>
-            <button class="answer-btn" id="answer4"></button>
+            <button class="answer-btn" id="answer1" data-answer="1"></button>
+            <button class="answer-btn" id="answer2" data-answer="2"></button>
+            <button class="answer-btn" id="answer3" data-answer="3"></button>
+            <button class="answer-btn" id="answer4" data-answer="4"></button>
         </div>
         <div id="score-container">
             <p>Current Prize: <span id="score">$0</span></p>
@@ -29,3 +32,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
