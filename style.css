@@ -106,3 +106,19 @@ h1 {
 .lifeline-btn:hover {
     background-color: #3498db;
 }
+
+#progress-bar-container {
+    width: 100%;
+    background-color: #34495e;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    height: 20px;
+    width: 0;
+    background-color: #e67e22;
+    border-radius: 5px;
+    transition: width 0.5s;
+}
+
