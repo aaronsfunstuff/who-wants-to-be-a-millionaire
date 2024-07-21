@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Rules - Who Wants to Be a Millionaire</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .rules-section {
+            margin: 20px 0;
+        }
+        .rules-section h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        .rules-section p {
+            line-height: 1.6;
+        }
+        .rules-list {
+            margin: 20px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .rules-list li {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .example {
+            background: #e9ecef;
+            border-left: 5px solid #007bff;
+            padding: 10px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button-container a {
+            text-decoration: none;
+            background: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button-container a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Game Rules - Who Wants to Be a Millionaire</h1>
+
+        <div class="rules-section">
+            <h2>Objective of the Game</h2>
+            <p>The goal of the game is to correctly answer a series of increasingly difficult multiple-choice questions to win the grand prize. Each correct answer brings you closer to winning, while each incorrect answer could end the game or reduce your final score.</p>
+        </div>
+
+        <div class="rules-section">
+            <h2>Game Structure</h2>
+            <p>The game consists of multiple rounds, with each round featuring a single question. The questions are arranged in a progressive manner, with each subsequent question being more challenging than the previous one.</p>
+            <p>The game starts with the easiest questions and progresses to more difficult ones. As you advance, your potential winnings increase. Your final score is determined by the number of correct answers you provide.</p>
+        </div>
+
+        <div class="rules-section">
+            <h2>Question Format</h2>
+            <p>Each question is presented with four possible answers. Only one answer is correct. You must select the correct answer to move on to the next question. The questions are presented in a random order, so each game experience is unique.</p>
+            <div class="example">
+                <strong>Example Question:</strong><br>
+                <em>What is the capital of France?</em><br>
+                <strong>Options:</strong><br>
+                A) Berlin<br>
+                B) Madrid<br>
+                C) Paris<br>
+                D) Lisbon<br>
+                <strong>Correct Answer:</strong> C) Paris
+            </div>
+        </div>
+
+        <div class="rules-section">
+            <h2>Lifelines</h2>
+            <p>You have three lifelines to assist you in answering questions:</p>
+            <ul class="rules-list">
+                <li>
+                    <h3>Fifty-Fifty</h3>
+                    <p>This lifeline removes two of the incorrect answers, leaving one correct answer and one incorrect answer. This helps narrow down your choices and makes it easier to select the correct answer.</p>
+                </li>
+                <li>
+                    <h3>Phone a Friend</h3>
+                    <p>With this lifeline, you get a hint from a simulated friend. The friend will suggest the most likely correct answer based on their knowledge. This is a valuable tool when you're unsure about the correct answer.</p>
+                </li>
+                <li>
+                    <h3>Switch the Question</h3>
+                    <p>This lifeline allows you to skip the current question and move on to a new one. It can be used when you're stuck or if you prefer to avoid a particular question.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="rules-section">
+            <h2>Timing</h2>
+            <p>You have 30 seconds to answer each question. A countdown timer will be visible on the screen, showing the remaining time. If the timer reaches zero before you answer, the game will automatically proceed to the next question.</p>
+            <div class="example">
+                <strong>Example:</strong><br>
+                If you have 10 seconds left and you select an answer, your response will be submitted regardless of the remaining time.
+            </div>
+        </div>
+
+        <div class="rules-section">
+            <h2>Scoring</h2>
+            <p>Each correct answer earns you $1000. Your score is updated after each question, and the total is displayed on the screen. At the end of the game, your final score will be shown, reflecting your performance.</p>
+            <div class="example">
+                <strong>Example:</strong><br>
+                If you answer 5 questions correctly, your score will be $5000.
+            </div>
+        </div>
+
+        <div class="rules-section">
+            <h2>Game Over</h2>
+            <p>The game ends in two scenarios:</p>
+            <ul>
+                <li>You correctly answer all questions, and the game concludes with a final score based on your performance.</li>
+                <li>Time runs out, or you answer a question incorrectly. The game will display your final score and give you an option to play again.</li>
+            </ul>
+        </div>
+
+        <div class="button-container">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
