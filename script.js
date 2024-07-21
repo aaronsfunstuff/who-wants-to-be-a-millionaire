@@ -753,7 +753,61 @@ const questions = [
             { text: "Ben Jonson", correct: false },
             { text: "George Bernard Shaw", correct: false }
         ]
+    }, {
+        question: "What is the capital of Brazil?",
+        answers: [
+            { text: "Rio de Janeiro", correct: false },
+            { text: "São Paulo", correct: false },
+            { text: "Brasília", correct: true },
+            { text: "Salvador", correct: false }
+        ]
     },
+    {
+        question: "Which famous scientist is known for his theory of evolution?",
+        answers: [
+            { text: "Charles Darwin", correct: true },
+            { text: "Gregor Mendel", correct: false },
+            { text: "Louis Pasteur", correct: false },
+            { text: "Richard Dawkins", correct: false }
+        ]
+    },
+    {
+        question: "Which country is known as the Land of the Rising Sun?",
+        answers: [
+            { text: "Japan", correct: true },
+            { text: "China", correct: false },
+            { text: "South Korea", correct: false },
+            { text: "Thailand", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital of Canada?",
+        answers: [
+            { text: "Toronto", correct: false },
+            { text: "Vancouver", correct: false },
+            { text: "Ottawa", correct: true },
+            { text: "Montreal", correct: false }
+        ]
+    },
+    {
+        question: "Which planet is known for its red color?",
+        answers: [
+            { text: "Mars", correct: true },
+            { text: "Venus", correct: false },
+            { text: "Saturn", correct: false },
+            { text: "Jupiter", correct: false }
+        ]
+    },
+    {
+        question: "Who wrote 'To Kill a Mockingbird'?",
+        answers: [
+            { text: "Harper Lee", correct: true },
+            { text: "Mark Twain", correct: false },
+            { text: "J.D. Salinger", correct: false },
+            { text: "Ernest Hemingway", correct: false }
+        ]
+    }
+]
 ];
 
 let currentQuestionIndex = 0;
