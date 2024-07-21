@@ -17,7 +17,519 @@ const questions = [
             { text: "F. Scott Fitzgerald", correct: false }
         ]
     },
-    // Add more questions here
+   {
+        question: "What is the capital of Australia?",
+        answers: [
+            { text: "Sydney", correct: false },
+            { text: "Melbourne", correct: false },
+            { text: "Canberra", correct: true },
+            { text: "Brisbane", correct: false }
+        ]
+    },
+    {
+        question: "Who wrote 'Pride and Prejudice'?",
+        answers: [
+            { text: "Jane Austen", correct: true },
+            { text: "Charlotte Brontë", correct: false },
+            { text: "Emily Dickinson", correct: false },
+            { text: "Mary Shelley", correct: false }
+        ]
+    },
+    {
+        question: "What is the largest planet in our solar system?",
+        answers: [
+            { text: "Earth", correct: false },
+            { text: "Mars", correct: false },
+            { text: "Jupiter", correct: true },
+            { text: "Saturn", correct: false }
+        ]
+    },
+    {
+        question: "Which element has the chemical symbol 'Au'?",
+        answers: [
+            { text: "Gold", correct: true },
+            { text: "Silver", correct: false },
+            { text: "Copper", correct: false },
+            { text: "Iron", correct: false }
+        ]
+    },
+    {
+        question: "Who painted the Mona Lisa?",
+        answers: [
+            { text: "Vincent van Gogh", correct: false },
+            { text: "Leonardo da Vinci", correct: true },
+            { text: "Pablo Picasso", correct: false },
+            { text: "Claude Monet", correct: false }
+        ]
+    },
+    {
+        question: "What is the hardest natural substance on Earth?",
+        answers: [
+            { text: "Gold", correct: false },
+            { text: "Diamond", correct: true },
+            { text: "Iron", correct: false },
+            { text: "Platinum", correct: false }
+        ]
+    },
+    {
+        question: "What is the smallest country in the world by land area?",
+        answers: [
+            { text: "Monaco", correct: false },
+            { text: "Vatican City", correct: true },
+            { text: "San Marino", correct: false },
+            { text: "Liechtenstein", correct: false }
+        ]
+    },
+    {
+        question: "Who is the author of the 'Harry Potter' series?",
+        answers: [
+            { text: "J.K. Rowling", correct: true },
+            { text: "J.R.R. Tolkien", correct: false },
+            { text: "George R.R. Martin", correct: false },
+            { text: "C.S. Lewis", correct: false }
+        ]
+    },
+    {
+        question: "What is the largest ocean on Earth?",
+        answers: [
+            { text: "Atlantic Ocean", correct: false },
+            { text: "Indian Ocean", correct: false },
+            { text: "Arctic Ocean", correct: false },
+            { text: "Pacific Ocean", correct: true }
+        ]
+    },
+    {
+        question: "What year did the Titanic sink?",
+        answers: [
+            { text: "1912", correct: true },
+            { text: "1905", correct: false },
+            { text: "1918", correct: false },
+            { text: "1923", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital of Japan?",
+        answers: [
+            { text: "Tokyo", correct: true },
+            { text: "Kyoto", correct: false },
+            { text: "Osaka", correct: false },
+            { text: "Hiroshima", correct: false }
+        ]
+    },
+    {
+        question: "Who developed the theory of relativity?",
+        answers: [
+            { text: "Isaac Newton", correct: false },
+            { text: "Albert Einstein", correct: true },
+            { text: "Galileo Galilei", correct: false },
+            { text: "Niels Bohr", correct: false }
+        ]
+    },
+    {
+        question: "What is the longest river in the world?",
+        answers: [
+            { text: "Amazon River", correct: true },
+            { text: "Nile River", correct: false },
+            { text: "Yangtze River", correct: false },
+            { text: "Mississippi River", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital of Canada?",
+        answers: [
+            { text: "Toronto", correct: false },
+            { text: "Vancouver", correct: false },
+            { text: "Ottawa", correct: true },
+            { text: "Montreal", correct: false }
+        ]
+    },
+    {
+        question: "Which planet is known as the Red Planet?",
+        answers: [
+            { text: "Venus", correct: false },
+            { text: "Mars", correct: true },
+            { text: "Mercury", correct: false },
+            { text: "Jupiter", correct: false }
+        ]
+    },
+    {
+        question: "What is the chemical symbol for water?",
+        answers: [
+            { text: "O2", correct: false },
+            { text: "H2O", correct: true },
+            { text: "CO2", correct: false },
+            { text: "NaCl", correct: false }
+        ]
+    },
+    {
+        question: "Which continent is known as the 'Dark Continent'?",
+        answers: [
+            { text: "Asia", correct: false },
+            { text: "Africa", correct: true },
+            { text: "Australia", correct: false },
+            { text: "South America", correct: false }
+        ]
+    },
+    {
+        question: "Who was the first President of the United States?",
+        answers: [
+            { text: "George Washington", correct: true },
+            { text: "Thomas Jefferson", correct: false },
+            { text: "Abraham Lincoln", correct: false },
+            { text: "John Adams", correct: false }
+        ]
+    },
+    {
+        question: "What is the largest mammal in the world?",
+        answers: [
+            { text: "African Elephant", correct: false },
+            { text: "Blue Whale", correct: true },
+            { text: "Giraffe", correct: false },
+            { text: "Hippopotamus", correct: false }
+        ]
+    },
+    {
+        question: "Which country is known as the Land of the Rising Sun?",
+        answers: [
+            { text: "China", correct: false },
+            { text: "Japan", correct: true },
+            { text: "South Korea", correct: false },
+            { text: "Thailand", correct: false }
+        ]
+    },
+    {
+        question: "What is the main ingredient in guacamole?",
+        answers: [
+            { text: "Tomato", correct: false },
+            { text: "Avocado", correct: true },
+            { text: "Onion", correct: false },
+            { text: "Pepper", correct: false }
+        ]
+    },
+    {
+        question: "Which famous scientist developed the laws of motion?",
+        answers: [
+            { text: "Isaac Newton", correct: true },
+            { text: "Albert Einstein", correct: false },
+            { text: "Nikola Tesla", correct: false },
+            { text: "Galileo Galilei", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital of Italy?",
+        answers: [
+            { text: "Rome", correct: true },
+            { text: "Florence", correct: false },
+            { text: "Venice", correct: false },
+            { text: "Milan", correct: false }
+        ]
+    },
+    {
+        question: "Which element has the atomic number 1?",
+        answers: [
+            { text: "Helium", correct: false },
+            { text: "Oxygen", correct: false },
+            { text: "Hydrogen", correct: true },
+            { text: "Carbon", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital of France?",
+        answers: [
+            { text: "Paris", correct: true },
+            { text: "Marseille", correct: false },
+            { text: "Lyon", correct: false },
+            { text: "Nice", correct: false }
+        ]
+    },
+    {
+        question: "What is the hardest natural substance on Earth?",
+        answers: [
+            { text: "Diamond", correct: true },
+            { text: "Gold", correct: false },
+            { text: "Iron", correct: false },
+            { text: "Platinum", correct: false }
+        ]
+    },
+    {
+        question: "Which famous artist is known for cutting off his own ear?",
+        answers: [
+            { text: "Vincent van Gogh", correct: true },
+            { text: "Pablo Picasso", correct: false },
+            { text: "Claude Monet", correct: false },
+            { text: "Salvador Dalí", correct: false }
+        ]
+    },
+    {
+        question: "What is the main language spoken in Brazil?",
+        answers: [
+            { text: "Spanish", correct: false },
+            { text: "Portuguese", correct: true },
+            { text: "English", correct: false },
+            { text: "French", correct: false }
+        ]
+    },
+    {
+        question: "Which planet is closest to the sun?",
+        answers: [
+            { text: "Venus", correct: false },
+            { text: "Earth", correct: false },
+            { text: "Mercury", correct: true },
+            { text: "Mars", correct: false }
+        ]
+    },
+    {
+        question: "What is the chemical symbol for gold?",
+        answers: [
+            { text: "Au", correct: true },
+            { text: "Ag", correct: false },
+            { text: "Pb", correct: false },
+            { text: "Fe", correct: false }
+        ]
+    },
+    {
+        question: "Which country is the largest by land area?",
+        answers: [
+            { text: "China", correct: false },
+            { text: "Canada", correct: true },
+            { text: "United States", correct: false },
+            { text: "Russia", correct: false }
+        ]
+    },
+    {
+        question: "What is the currency of Japan?",
+        answers: [
+            { text: "Yuan", correct: false },
+            { text: "Won", correct: false },
+            { text: "Yen", correct: true },
+            { text: "Ringgit", correct: false }
+        ]
+    },
+    {
+        question: "Which organ in the human body is primarily responsible for pumping blood?",
+        answers: [
+            { text: "Lung", correct: false },
+            { text: "Liver", correct: false },
+            { text: "Heart", correct: true },
+            { text: "Kidney", correct: false }
+        ]
+    },
+    {
+        question: "Which famous physicist developed the theory of electromagnetism?",
+        answers: [
+            { text: "Michael Faraday", correct: true },
+            { text: "James Clerk Maxwell", correct: false },
+            { text: "Nikola Tesla", correct: false },
+            { text: "Albert Einstein", correct: false }
+        ]
+    },
+    {
+        question: "Who was the 16th President of the United States?",
+        answers: [
+            { text: "Abraham Lincoln", correct: true },
+            { text: "George Washington", correct: false },
+            { text: "Thomas Jefferson", correct: false },
+            { text: "John Adams", correct: false }
+        ]
+    },
+    {
+        question: "What is the smallest planet in our solar system?",
+        answers: [
+            { text: "Mercury", correct: true },
+            { text: "Mars", correct: false },
+            { text: "Venus", correct: false },
+            { text: "Pluto", correct: false }
+        ]
+    },
+    {
+        question: "Which vitamin is primarily obtained from sunlight?",
+        answers: [
+            { text: "Vitamin A", correct: false },
+            { text: "Vitamin C", correct: false },
+            { text: "Vitamin D", correct: true },
+            { text: "Vitamin E", correct: false }
+        ]
+    },
+    {
+        question: "Which element is represented by the symbol 'O' on the periodic table?",
+        answers: [
+            { text: "Oxygen", correct: true },
+            { text: "Gold", correct: false },
+            { text: "Osmium", correct: false },
+            { text: "Oganesson", correct: false }
+        ]
+    },
+    {
+        question: "What is the largest island in the world?",
+        answers: [
+            { text: "Australia", correct: false },
+            { text: "Greenland", correct: true },
+            { text: "New Guinea", correct: false },
+            { text: "Borneo", correct: false }
+        ]
+    },
+    {
+        question: "Which is the only continent with no desert?",
+        answers: [
+            { text: "Europe", correct: true },
+            { text: "South America", correct: false },
+            { text: "Australia", correct: false },
+            { text: "Africa", correct: false }
+        ]
+    },
+    {
+        question: "Who was the first human to journey into outer space?",
+        answers: [
+            { text: "Yuri Gagarin", correct: true },
+            { text: "Neil Armstrong", correct: false },
+            { text: "Buzz Aldrin", correct: false },
+            { text: "John Glenn", correct: false }
+        ]
+    },
+    {
+        question: "Which country is known as the Land of the Midnight Sun?",
+        answers: [
+            { text: "Norway", correct: true },
+            { text: "Sweden", correct: false },
+            { text: "Finland", correct: false },
+            { text: "Iceland", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital of Spain?",
+        answers: [
+            { text: "Madrid", correct: true },
+            { text: "Barcelona", correct: false },
+            { text: "Seville", correct: false },
+            { text: "Valencia", correct: false }
+        ]
+    },
+    {
+        question: "Which famous scientist developed the theory of evolution?",
+        answers: [
+            { text: "Charles Darwin", correct: true },
+            { text: "Gregor Mendel", correct: false },
+            { text: "Louis Pasteur", correct: false },
+            { text: "Richard Dawkins", correct: false }
+        ]
+    },
+    {
+        question: "What is the name of the longest river in Africa?",
+        answers: [
+            { text: "Nile", correct: true },
+            { text: "Congo", correct: false },
+            { text: "Zambezi", correct: false },
+            { text: "Niger", correct: false }
+        ]
+    },
+    {
+        question: "Which animal is known as the King of the Jungle?",
+        answers: [
+            { text: "Lion", correct: true },
+            { text: "Tiger", correct: false },
+            { text: "Elephant", correct: false },
+            { text: "Giraffe", correct: false }
+        ]
+    },
+    {
+        question: "What is the currency used in the United Kingdom?",
+        answers: [
+            { text: "Euro", correct: false },
+            { text: "Pound Sterling", correct: true },
+            { text: "Dollar", correct: false },
+            { text: "Yen", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital of Egypt?",
+        answers: [
+            { text: "Cairo", correct: true },
+            { text: "Alexandria", correct: false },
+            { text: "Giza", correct: false },
+            { text: "Luxor", correct: false }
+        ]
+    },
+    {
+        question: "Who is known for his theory of gravity?",
+        answers: [
+            { text: "Isaac Newton", correct: true },
+            { text: "Albert Einstein", correct: false },
+            { text: "Galileo Galilei", correct: false },
+            { text: "Stephen Hawking", correct: false }
+        ]
+    },
+    {
+        question: "Which ocean is located between Africa and Australia?",
+        answers: [
+            { text: "Atlantic Ocean", correct: false },
+            { text: "Indian Ocean", correct: true },
+            { text: "Pacific Ocean", correct: false },
+            { text: "Arctic Ocean", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital of India?",
+        answers: [
+            { text: "Mumbai", correct: false },
+            { text: "New Delhi", correct: true },
+            { text: "Kolkata", correct: false },
+            { text: "Bangalore", correct: false }
+        ]
+    },
+    {
+        question: "Who painted the Sistine Chapel ceiling?",
+        answers: [
+            { text: "Michelangelo", correct: true },
+            { text: "Raphael", correct: false },
+            { text: "Leonardo da Vinci", correct: false },
+            { text: "Caravaggio", correct: false }
+        ]
+    },
+    {
+        question: "Which planet is known as the 'Morning Star' or 'Evening Star'?",
+        answers: [
+            { text: "Venus", correct: true },
+            { text: "Mercury", correct: false },
+            { text: "Mars", correct: false },
+            { text: "Jupiter", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital of Germany?",
+        answers: [
+            { text: "Berlin", correct: true },
+            { text: "Munich", correct: false },
+            { text: "Frankfurt", correct: false },
+            { text: "Hamburg", correct: false }
+        ]
+    },
+    {
+        question: "Which planet is known for its prominent ring system?",
+        answers: [
+            { text: "Saturn", correct: true },
+            { text: "Jupiter", correct: false },
+            { text: "Uranus", correct: false },
+            { text: "Neptune", correct: false }
+        ]
+    },
+    {
+        question: "Who is known as the Father of Computers?",
+        answers: [
+            { text: "Charles Babbage", correct: true },
+            { text: "Alan Turing", correct: false },
+            { text: "Ada Lovelace", correct: false },
+            { text: "Bill Gates", correct: false }
+        ]
+    },
+    {
+        question: "What is the name of the largest desert in the world?",
+        answers: [
+            { text: "Sahara", correct: false },
+            { text: "Arabian", correct: false },
+            { text: "Antarctic", correct: true },
+            { text: "Gobi", correct: false }
+        ]
+    },
 ];
 
 let currentQuestionIndex = 0;
