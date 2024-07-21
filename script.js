@@ -17,11 +17,14 @@ const questions = [
             { text: "F. Scott Fitzgerald", correct: false }
         ]
     },
+    // Add more questions here
 ];
 
 let currentQuestionIndex = 0;
 let score = 0;
 let timer;
+let usedFiftyFifty = false;
+
 const questionElement = document.getElementById('question');
 const answerButtons = document.querySelectorAll('.answer-btn');
 const scoreElement = document.getElementById('score');
@@ -78,6 +81,7 @@ function showQuestion() {
         const button = answerButtons[index];
         button.textContent = answer.text;
         button.dataset.correct = answer.correct;
+        button.style.display = 'block'; // Ensure button is displayed
         button.addEventListener('click', selectAnswer);
     });
     updateProgressBar();
@@ -104,12 +108,14 @@ function selectAnswer(e) {
         selectedButton.classList.add('wrong');
     }
     scoreElement.textContent = `$${score}`;
-    if (currentQuestionIndex < questions.length - 1) {
-        currentQuestionIndex++;
-        setTimeout(showQuestion, 1000);
-    } else {
-        setTimeout(() => alert('Congratulations! You won!'), 1000);
-    }
+    setTimeout(() => {
+        if (currentQuestionIndex < questions.length - 1) {
+            currentQuestionIndex++;
+            showQuestion();
+        } else {
+            alert('Congratulations! You completed the game! Final score: $' + score);
+        }
+    }, 1000);
 }
 
 function useFiftyFifty() {
@@ -150,6 +156,64 @@ function updateProgressBar() {
     const progress = (currentQuestionIndex + 1) / questions.length * 100;
     progressBar.style.width = progress + '%';
 }
+const usernameInput = document.getElementById('username');
+const loginButton = document.getElementById('login-button');
+const logoutButton = document.getElementById('logout-button');
+const profileContainer = document.getElementById('profile-container');
+const loginContainer = document.getElementById('login-container');
+const userNameDisplay = document.getElementById('user-name');
+
+function login() {
+    const username = usernameInput.value;
+    if (username) {
+        localStorage.setItem('username', username);
+        showProfile();
+    }
+}
+
+function logout() {
+    localStorage.removeItem('username');
+    showLogin();
+}
+
+function showProfile() {
+    const username = localStorage.getItem('username');
+    if (username) {
+        userNameDisplay.textContent = username;
+        profileContainer.style.display = 'block';
+        loginContainer.style.display = 'none';
+    }
+}
+
+function showLogin() {
+    profileContainer.style.display = 'none';
+    loginContainer.style.display = 'block';
+}
+
+// Set up login and logout event listeners
+loginButton.addEventListener('click', login);
+logoutButton.addEventListener('click', logout);
+
+// Show profile if already logged in
+showProfile();
+const leaderboardKey = 'leaderboard';
+
+function saveScore(name, score) {
+    let leaderboard = JSON.parse(localStorage.getItem(leaderboardKey)) || [];
+    leaderboard.push({ name, score });
+    leaderboard.sort((a, b) => b.score - a.score);
+    if (leaderboard.length > 10) leaderboard.pop(); // Keep top 10 scores
+    localStorage.setItem(leaderboardKey, JSON.stringify(leaderboard));
+    updateLeaderboard();
+}
+
+function updateLeaderboard() {
+    const leaderboardList = document.getElementById('leaderboard');
+    let leaderboard = JSON.parse(localStorage.getItem(leaderboardKey)) || [];
+    leaderboardList.innerHTML = leaderboard.map(entry => `<li>${entry.name}: $${entry.score}</li>`).join('');
+}
+
+// Call updateLeaderboard on page load
+updateLeaderboard();
 
 startGame();
-
