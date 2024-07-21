@@ -529,6 +529,230 @@ const questions = [
             { text: "Antarctic", correct: true },
             { text: "Gobi", correct: false }
         ]
+    },{
+        question: "Which ocean is the smallest in the world?",
+        answers: [
+            { text: "Atlantic Ocean", correct: false },
+            { text: "Indian Ocean", correct: false },
+            { text: "Arctic Ocean", correct: true },
+            { text: "Pacific Ocean", correct: false }
+        ]
+    },
+    {
+        question: "Which famous inventor is known for the light bulb?",
+        answers: [
+            { text: "Thomas Edison", correct: true },
+            { text: "Alexander Graham Bell", correct: false },
+            { text: "Nikola Tesla", correct: false },
+            { text: "James Watt", correct: false }
+        ]
+    },
+    {
+        question: "Who was the first woman to win a Nobel Prize?",
+        answers: [
+            { text: "Marie Curie", correct: true },
+            { text: "Rosalind Franklin", correct: false },
+            { text: "Ada Lovelace", correct: false },
+            { text: "Helen Keller", correct: false }
+        ]
+    },
+    {
+        question: "Which U.S. state is known as the Sunshine State?",
+        answers: [
+            { text: "California", correct: false },
+            { text: "Florida", correct: true },
+            { text: "Texas", correct: false },
+            { text: "Arizona", correct: false }
+        ]
+    },
+    {
+        question: "What is the name of the galaxy that contains our Solar System?",
+        answers: [
+            { text: "Andromeda", correct: false },
+            { text: "Milky Way", correct: true },
+            { text: "Triangulum", correct: false },
+            { text: "Sombrero", correct: false }
+        ]
+    },
+    {
+        question: "Which famous explorer is credited with discovering America?",
+        answers: [
+            { text: "Christopher Columbus", correct: true },
+            { text: "Ferdinand Magellan", correct: false },
+            { text: "Vasco da Gama", correct: false },
+            { text: "James Cook", correct: false }
+        ]
+    },
+    {
+        question: "What is the name of the largest volcano in the world?",
+        answers: [
+            { text: "Mount St. Helens", correct: false },
+            { text: "Kilauea", correct: false },
+            { text: "Mauna Loa", correct: true },
+            { text: "Mount Fuji", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital city of Thailand?",
+        answers: [
+            { text: "Bangkok", correct: true },
+            { text: "Chiang Mai", correct: false },
+            { text: "Phuket", correct: false },
+            { text: "Krabi", correct: false }
+        ]
+    },
+    {
+        question: "Which planet is known as the 'Ice Giant'?",
+        answers: [
+            { text: "Uranus", correct: true },
+            { text: "Neptune", correct: false },
+            { text: "Saturn", correct: false },
+            { text: "Jupiter", correct: false }
+        ]
+    },
+    {
+        question: "Who is the Greek goddess of wisdom?",
+        answers: [
+            { text: "Athena", correct: true },
+            { text: "Aphrodite", correct: false },
+            { text: "Hera", correct: false },
+            { text: "Artemis", correct: false }
+        ]
+    },
+    {
+        question: "What is the longest river in South America?",
+        answers: [
+            { text: "Amazon River", correct: true },
+            { text: "Paraná River", correct: false },
+            { text: "Orinoco River", correct: false },
+            { text: "São Francisco River", correct: false }
+        ]
+    },
+    {
+        question: "Who discovered penicillin?",
+        answers: [
+            { text: "Alexander Fleming", correct: true },
+            { text: "Louis Pasteur", correct: false },
+            { text: "Robert Koch", correct: false },
+            { text: "Joseph Lister", correct: false }
+        ]
+    },
+    {
+        question: "Which element is essential for the production of thyroid hormones?",
+        answers: [
+            { text: "Iodine", correct: true },
+            { text: "Calcium", correct: false },
+            { text: "Iron", correct: false },
+            { text: "Magnesium", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital of Greece?",
+        answers: [
+            { text: "Athens", correct: true },
+            { text: "Thessaloniki", correct: false },
+            { text: "Patras", correct: false },
+            { text: "Heraklion", correct: false }
+        ]
+    },
+    {
+        question: "Which artist is famous for his work 'Starry Night'?",
+        answers: [
+            { text: "Vincent van Gogh", correct: true },
+            { text: "Pablo Picasso", correct: false },
+            { text: "Claude Monet", correct: false },
+            { text: "Edvard Munch", correct: false }
+        ]
+    },
+    {
+        question: "What is the currency used in Mexico?",
+        answers: [
+            { text: "Peso", correct: true },
+            { text: "Dollar", correct: false },
+            { text: "Euro", correct: false },
+            { text: "Yen", correct: false }
+        ]
+    },
+    {
+        question: "Which famous battle took place in 1066?",
+        answers: [
+            { text: "Battle of Hastings", correct: true },
+            { text: "Battle of Waterloo", correct: false },
+            { text: "Battle of Trafalgar", correct: false },
+            { text: "Battle of Gettysburg", correct: false }
+        ]
+    },
+    {
+        question: "Which planet is known as the 'Giant Planet'?",
+        answers: [
+            { text: "Jupiter", correct: true },
+            { text: "Saturn", correct: false },
+            { text: "Uranus", correct: false },
+            { text: "Neptune", correct: false }
+        ]
+    },
+    {
+        question: "What is the largest species of shark?",
+        answers: [
+            { text: "Great White Shark", correct: false },
+            { text: "Hammerhead Shark", correct: false },
+            { text: "Whale Shark", correct: true },
+            { text: "Tiger Shark", correct: false }
+        ]
+    },
+    {
+        question: "What is the capital of Turkey?",
+        answers: [
+            { text: "Istanbul", correct: false },
+            { text: "Ankara", correct: true },
+            { text: "Izmir", correct: false },
+            { text: "Antalya", correct: false }
+        ]
+    },
+    {
+        question: "Which scientist is known for his work on the theory of relativity?",
+        answers: [
+            { text: "Albert Einstein", correct: true },
+            { text: "Isaac Newton", correct: false },
+            { text: "Galileo Galilei", correct: false },
+            { text: "Niels Bohr", correct: false }
+        ]
+    },
+    {
+        question: "Who was the first man to walk on the moon?",
+        answers: [
+            { text: "Neil Armstrong", correct: true },
+            { text: "Buzz Aldrin", correct: false },
+            { text: "Yuri Gagarin", correct: false },
+            { text: "Michael Collins", correct: false }
+        ]
+    },
+    {
+        question: "Which fruit is known for having its seeds on the outside?",
+        answers: [
+            { text: "Strawberry", correct: true },
+            { text: "Blueberry", correct: false },
+            { text: "Apple", correct: false },
+            { text: "Orange", correct: false }
+        ]
+    },
+    {
+        question: "What is the name of the sea between Europe and Africa?",
+        answers: [
+            { text: "Mediterranean Sea", correct: true },
+            { text: "Red Sea", correct: false },
+            { text: "Black Sea", correct: false },
+            { text: "Caspian Sea", correct: false }
+        ]
+    },
+    {
+        question: "Which famous playwright wrote 'Romeo and Juliet'?",
+        answers: [
+            { text: "William Shakespeare", correct: true },
+            { text: "Christopher Marlowe", correct: false },
+            { text: "Ben Jonson", correct: false },
+            { text: "George Bernard Shaw", correct: false }
+        ]
     },
 ];
 
