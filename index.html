@@ -9,6 +9,16 @@
 <body>
     <div id="game-container">
         <h1>Who Wants to Be a Millionaire</h1>
+      <div id="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter your name">
+    <button id="login-button">Login</button>
+</div>
+<div id="profile-container" style="display: none;">
+    <p>Welcome, <span id="user-name"></span>!</p>
+    <button id="logout-button">Logout</button>
+</div>
+
         <div id="timer-container">
             <p>Time Left: <span id="timer">30</span> seconds</p>
         </div>
@@ -33,7 +43,13 @@
             <button class="lifeline-btn" id="lifeline3">Phone a Friend</button>
             <button class="lifeline-btn" id="lifeline4">Switch the Question</button>
         </div>
+      <div id="leaderboard-container">
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+</div>
+
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
